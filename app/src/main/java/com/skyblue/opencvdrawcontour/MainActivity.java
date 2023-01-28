@@ -136,10 +136,8 @@ public class MainActivity extends AppCompatActivity {
             for (int contourIdx = 0; contourIdx < contours.size(); contourIdx++)
             {
                // Imgproc.drawContours(mRGBA, contours, contourIdx, new Scalar(0,0,255), -1);
-                Imgproc.drawContours(mRGBA, contours, 0, blue, 3);
+                Imgproc.drawContours(mRGBA, contours, contourIdx, blue, 3);
             }
-
-            //Imgproc.drawContours(mRGBA, contours, 0, blue, 3);
             return mRGBA;
         }
 
